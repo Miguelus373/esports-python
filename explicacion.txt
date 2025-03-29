@@ -1,0 +1,24 @@
+El código que desarrollé con python funciona de la siguiente forma:
+
+El archivo esporst.py es el archivo principal que ejecuta el programa. Le da la bienvenida al usuario y le muestra el menú principal.
+
+Los menus de este programa están todos encapsulados como métodos en la clase Menu. Los primeros son el menú principal y el menú opciones.
+
+El menú principal muestra una lista con 3 opciones:
+- Menú de equipos (al selecionarlo muestra un submenu para equipos)
+- Menú de jugadores (al selecionarlo muestra un submenu para jugadores)
+- Salir (al seleccionar esta opción se cierra la aplicación)
+
+Para seleccionar un menú se debe ingresar el numero que acompaña a la opcion del menú.
+
+Menu de equipos:
+Este menú nos muestra el crud enfocado solo a la tabla de equipos. Nos permite listar, actualizar, crear, y eliminar equipos.
+
+Menu de jugadores:
+Este menú nos muestra el crud enfocado solo a la tabla de jugadores. Nos permite listar, actualizar, crear, y eliminar jugadores.
+
+Para acceder a las diferentes opciones de los submenus, solo se debe ingresar el numero de la opcion, luego de eso se siguen las instruciones respectivas de cada opcion.
+
+En este programa a parte de la clase Menu existen las clases Equipo y Jugador, que encapsulan la lógica para eliminar, crear, y actualizar sus registros, así como también hacer operaciones en sus tablas respectivas.
+
+Estas dos tablas hacen uso del método conectar, definido en el archivo conexion, este método nos permite conectarnos a la BD con el nombre esports.
